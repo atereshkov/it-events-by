@@ -10,13 +10,15 @@
 		214F38895401B9AA3C85076A /* Pods_it_events_byTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3AF2986B39F269FCB6E96210 /* Pods_it_events_byTests.framework */; };
 		98CC726B53212A56F91824C4 /* Pods_it_events_by.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF0D7B12C273BE80DC7F3BBE /* Pods_it_events_by.framework */; };
 		A39CBC172257E874004C6A95 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CBC162257E874004C6A95 /* AppDelegate.swift */; };
-		A39CBC192257E874004C6A95 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CBC182257E874004C6A95 /* ViewController.swift */; };
 		A39CBC1C2257E874004C6A95 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CBC1A2257E874004C6A95 /* Main.storyboard */; };
 		A39CBC1E2257E875004C6A95 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39CBC1D2257E875004C6A95 /* Images.xcassets */; };
 		A39CBC212257E875004C6A95 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A39CBC1F2257E875004C6A95 /* LaunchScreen.storyboard */; };
-		A39CBC2C2257E875004C6A95 /* it_events_byTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A39CBC2B2257E875004C6A95 /* it_events_byTests.swift */; };
 		A39CBC3D2257EDB7004C6A95 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A39CBC3C2257EDB7004C6A95 /* Colors.xcassets */; };
 		A3C6C5842257FFB300F17264 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = A3C6C5862257FFB300F17264 /* Localizable.strings */; };
+		A3C6C59022580E0E00F17264 /* AppSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C58F22580E0E00F17264 /* AppSession.swift */; };
+		A3C6C59222580E1400F17264 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C59122580E1400F17264 /* SessionType.swift */; };
+		A3C6C59522580EAA00F17264 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C59422580EAA00F17264 /* NetworkManager.swift */; };
+		A3C6C5972258110F00F17264 /* AppSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5962258110F00F17264 /* AppSessionTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,18 +36,20 @@
 		A3941BF03ABAB3689542AC71 /* Pods-it-events-by.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-by.debug.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by.debug.xcconfig"; sourceTree = "<group>"; };
 		A39CBC132257E874004C6A95 /* it-events-by.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "it-events-by.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A39CBC162257E874004C6A95 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		A39CBC182257E874004C6A95 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A39CBC1B2257E874004C6A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A39CBC1D2257E875004C6A95 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		A39CBC202257E875004C6A95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A39CBC222257E875004C6A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39CBC272257E875004C6A95 /* it-events-byTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "it-events-byTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A39CBC2B2257E875004C6A95 /* it_events_byTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = it_events_byTests.swift; sourceTree = "<group>"; };
 		A39CBC2D2257E875004C6A95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A39CBC3C2257EDB7004C6A95 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
 		A3C6C5812257FF7C00F17264 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
 		A3C6C5852257FFB300F17264 /* ru */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ru; path = ru.lproj/Localizable.strings; sourceTree = "<group>"; };
 		A3C6C5872257FFB700F17264 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		A3C6C58F22580E0E00F17264 /* AppSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSession.swift; sourceTree = "<group>"; };
+		A3C6C59122580E1400F17264 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
+		A3C6C59422580EAA00F17264 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		A3C6C5962258110F00F17264 /* AppSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSessionTests.swift; sourceTree = "<group>"; };
 		D56D701ADA8BDB4069A4BD29 /* Pods-it-events-by.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-by.release.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by.release.xcconfig"; sourceTree = "<group>"; };
 		DE13FBDE89016F733D118737 /* Pods-it-events-byTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-byTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-byTests/Pods-it-events-byTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0D7B12C273BE80DC7F3BBE /* Pods_it_events_by.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_it_events_by.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -107,8 +111,6 @@
 				A3C6C5882258096200F17264 /* classes */,
 				A39CBC392257ED95004C6A95 /* resources */,
 				A39CBC382257ED82004C6A95 /* generated */,
-				A39CBC162257E874004C6A95 /* AppDelegate.swift */,
-				A39CBC182257E874004C6A95 /* ViewController.swift */,
 				A39CBC1A2257E874004C6A95 /* Main.storyboard */,
 				A39CBC1F2257E875004C6A95 /* LaunchScreen.storyboard */,
 				A39CBC222257E875004C6A95 /* Info.plist */,
@@ -119,7 +121,7 @@
 		A39CBC2A2257E875004C6A95 /* it-events-byTests */ = {
 			isa = PBXGroup;
 			children = (
-				A39CBC2B2257E875004C6A95 /* it_events_byTests.swift */,
+				A3C6C58B22580D1200F17264 /* core */,
 				A39CBC2D2257E875004C6A95 /* Info.plist */,
 			);
 			path = "it-events-byTests";
@@ -161,8 +163,60 @@
 		A3C6C5882258096200F17264 /* classes */ = {
 			isa = PBXGroup;
 			children = (
+				A3C6C58922580BFF00F17264 /* app */,
+				A3C6C598225813E800F17264 /* modules */,
+				A3C6C59322580E9D00F17264 /* network */,
 			);
 			path = classes;
+			sourceTree = "<group>";
+		};
+		A3C6C58922580BFF00F17264 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C58A22580C0800F17264 /* core */,
+				A39CBC162257E874004C6A95 /* AppDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		A3C6C58A22580C0800F17264 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C59122580E1400F17264 /* SessionType.swift */,
+				A3C6C58F22580E0E00F17264 /* AppSession.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A3C6C58B22580D1200F17264 /* core */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5962258110F00F17264 /* AppSessionTests.swift */,
+			);
+			path = core;
+			sourceTree = "<group>";
+		};
+		A3C6C59322580E9D00F17264 /* network */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C59422580EAA00F17264 /* NetworkManager.swift */,
+			);
+			path = network;
+			sourceTree = "<group>";
+		};
+		A3C6C598225813E800F17264 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C599225813F700F17264 /* ui */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		A3C6C599225813F700F17264 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ui;
 			sourceTree = "<group>";
 		};
 		D0C6A3B88EA8A654FBAFCD20 /* Pods */ = {
@@ -234,6 +288,7 @@
 					};
 					A39CBC262257E875004C6A95 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1020;
 						TestTargetID = A39CBC122257E874004C6A95;
 					};
 				};
@@ -396,8 +451,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39CBC192257E874004C6A95 /* ViewController.swift in Sources */,
 				A39CBC172257E874004C6A95 /* AppDelegate.swift in Sources */,
+				A3C6C59522580EAA00F17264 /* NetworkManager.swift in Sources */,
+				A3C6C59222580E1400F17264 /* SessionType.swift in Sources */,
+				A3C6C59022580E0E00F17264 /* AppSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -405,7 +462,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A39CBC2C2257E875004C6A95 /* it_events_byTests.swift in Sources */,
+				A3C6C5972258110F00F17264 /* AppSessionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -611,6 +668,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8EF4CLU9HX;
 				INFOPLIST_FILE = "it-events-byTests/Info.plist";
@@ -621,6 +679,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "at.it-events-byTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/it-events-by.app/it-events-by";
@@ -633,6 +693,7 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 8EF4CLU9HX;
 				INFOPLIST_FILE = "it-events-byTests/Info.plist";
@@ -643,6 +704,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "at.it-events-byTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/it-events-by.app/it-events-by";
