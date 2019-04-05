@@ -104,6 +104,7 @@
 		A39CBC152257E874004C6A95 /* it-events-by */ = {
 			isa = PBXGroup;
 			children = (
+				A3C6C5882258096200F17264 /* classes */,
 				A39CBC392257ED95004C6A95 /* resources */,
 				A39CBC382257ED82004C6A95 /* generated */,
 				A39CBC162257E874004C6A95 /* AppDelegate.swift */,
@@ -155,6 +156,13 @@
 				A39CBC1D2257E875004C6A95 /* Images.xcassets */,
 			);
 			path = images;
+			sourceTree = "<group>";
+		};
+		A3C6C5882258096200F17264 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = classes;
 			sourceTree = "<group>";
 		};
 		D0C6A3B88EA8A654FBAFCD20 /* Pods */ = {
