@@ -140,6 +140,8 @@
 				A39CBC102257E874004C6A95 /* Frameworks */,
 				A39CBC112257E874004C6A95 /* Resources */,
 				937192264F6592BCEC74BBCC /* [CP] Embed Pods Frameworks */,
+				A39CBC362257ECEE004C6A95 /* SwiftLint */,
+				A39CBC372257ED08004C6A95 /* SwiftGen */,
 			);
 			buildRules = (
 			);
@@ -277,6 +279,42 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		A39CBC362257ECEE004C6A95 /* SwiftLint */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftLint;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "if which swiftlint >/dev/null; then\n${PODS_ROOT}/SwiftLint/swiftlint\nelse echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi\n";
+		};
+		A39CBC372257ED08004C6A95 /* SwiftGen */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = SwiftGen;
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/SwiftGen/bin/swiftgen\"\n";
 		};
 		B2CFA715ECEF3951D5FB69C1 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
