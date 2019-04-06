@@ -1,7 +1,7 @@
 language: swift
 os: osx
 osx_image: xcode10.2
-xcode_workspace: it-events-by.workspace
+xcode_workspace: it-events-by.xcworkspace
 xcode_scheme: it-events-by-Develop
 xcode_destination: platform=iOS Simulator,OS=12.2,name=iPhone X
 
