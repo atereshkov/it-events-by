@@ -25,6 +25,15 @@
 		A3C6C5AD2258EB9B00F17264 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */; };
 		A3C6C5AF2258EFD200F17264 /* StubRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5AE2258EFD200F17264 /* StubRouter.swift */; };
 		A3C6C5B12258EFFD00F17264 /* BaseRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5B02258EFFD00F17264 /* BaseRouterTests.swift */; };
+		A3C6C5B622592C1400F17264 /* MainTabBarManagerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5B522592C1400F17264 /* MainTabBarManagerTests.swift */; };
+		A3C6C5B922592CCC00F17264 /* MainTabBarManagerProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5B822592CCC00F17264 /* MainTabBarManagerProtocol.swift */; };
+		A3C6C5BB22592CD300F17264 /* MainTabBarManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5BA22592CD300F17264 /* MainTabBarManager.swift */; };
+		A3C6C5BD22592CEB00F17264 /* MainTabBarDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5BC22592CEB00F17264 /* MainTabBarDelegate.swift */; };
+		A3C6C5C122592D6D00F17264 /* TabBarItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5C022592D6D00F17264 /* TabBarItem.swift */; };
+		A3C6C5C322592DC500F17264 /* BaseView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5C222592DC500F17264 /* BaseView.swift */; };
+		A3C6C5C522592E3A00F17264 /* BaseViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5C422592E3A00F17264 /* BaseViewModel.swift */; };
+		A3C6C5C92259337D00F17264 /* TabBarItemTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5C82259337D00F17264 /* TabBarItemTests.swift */; };
+		A3C6C5CB2259370900F17264 /* MainTabBarDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5CA2259370900F17264 /* MainTabBarDelegateMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,6 +71,15 @@
 		A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		A3C6C5AE2258EFD200F17264 /* StubRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubRouter.swift; sourceTree = "<group>"; };
 		A3C6C5B02258EFFD00F17264 /* BaseRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterTests.swift; sourceTree = "<group>"; };
+		A3C6C5B522592C1400F17264 /* MainTabBarManagerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarManagerTests.swift; sourceTree = "<group>"; };
+		A3C6C5B822592CCC00F17264 /* MainTabBarManagerProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarManagerProtocol.swift; sourceTree = "<group>"; };
+		A3C6C5BA22592CD300F17264 /* MainTabBarManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarManager.swift; sourceTree = "<group>"; };
+		A3C6C5BC22592CEB00F17264 /* MainTabBarDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarDelegate.swift; sourceTree = "<group>"; };
+		A3C6C5C022592D6D00F17264 /* TabBarItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItem.swift; sourceTree = "<group>"; };
+		A3C6C5C222592DC500F17264 /* BaseView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseView.swift; sourceTree = "<group>"; };
+		A3C6C5C422592E3A00F17264 /* BaseViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewModel.swift; sourceTree = "<group>"; };
+		A3C6C5C82259337D00F17264 /* TabBarItemTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarItemTests.swift; sourceTree = "<group>"; };
+		A3C6C5CA2259370900F17264 /* MainTabBarDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarDelegateMock.swift; sourceTree = "<group>"; };
 		D56D701ADA8BDB4069A4BD29 /* Pods-it-events-by.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-by.release.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by.release.xcconfig"; sourceTree = "<group>"; };
 		DE13FBDE89016F733D118737 /* Pods-it-events-byTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-byTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-byTests/Pods-it-events-byTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0D7B12C273BE80DC7F3BBE /* Pods_it_events_by.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_it_events_by.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -135,6 +153,8 @@
 			children = (
 				A3C6C5AB2258EB8C00F17264 /* router */,
 				A3C6C58B22580D1200F17264 /* session */,
+				A3C6C5B322592BF200F17264 /* modules */,
+				A3C6C5C62259336D00F17264 /* models */,
 				A39CBC2D2257E875004C6A95 /* Info.plist */,
 			);
 			path = "it-events-byTests";
@@ -177,6 +197,7 @@
 			isa = PBXGroup;
 			children = (
 				A3C6C58922580BFF00F17264 /* app */,
+				A3C6C5BE22592D5C00F17264 /* models */,
 				A3C6C598225813E800F17264 /* modules */,
 				A3C6C59322580E9D00F17264 /* network */,
 			);
@@ -230,6 +251,7 @@
 		A3C6C599225813F700F17264 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A3C6C5B2225927EC00F17264 /* main */,
 			);
 			path = ui;
 			sourceTree = "<group>";
@@ -247,6 +269,8 @@
 			isa = PBXGroup;
 			children = (
 				A3C6C5A52258EA3B00F17264 /* BaseRouter.swift */,
+				A3C6C5C222592DC500F17264 /* BaseView.swift */,
+				A3C6C5C422592E3A00F17264 /* BaseViewModel.swift */,
 			);
 			path = base;
 			sourceTree = "<group>";
@@ -259,6 +283,81 @@
 				A3C6C5AE2258EFD200F17264 /* StubRouter.swift */,
 			);
 			path = router;
+			sourceTree = "<group>";
+		};
+		A3C6C5B2225927EC00F17264 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5B722592C4E00F17264 /* tab-bar */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		A3C6C5B322592BF200F17264 /* modules */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5B422592BFF00F17264 /* main */,
+			);
+			path = modules;
+			sourceTree = "<group>";
+		};
+		A3C6C5B422592BFF00F17264 /* main */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5CD2259383200F17264 /* tab-bar */,
+			);
+			path = main;
+			sourceTree = "<group>";
+		};
+		A3C6C5B722592C4E00F17264 /* tab-bar */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5B822592CCC00F17264 /* MainTabBarManagerProtocol.swift */,
+				A3C6C5BA22592CD300F17264 /* MainTabBarManager.swift */,
+				A3C6C5BC22592CEB00F17264 /* MainTabBarDelegate.swift */,
+			);
+			path = "tab-bar";
+			sourceTree = "<group>";
+		};
+		A3C6C5BE22592D5C00F17264 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5BF22592D6100F17264 /* ui */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A3C6C5BF22592D6100F17264 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5C022592D6D00F17264 /* TabBarItem.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		A3C6C5C62259336D00F17264 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5C72259337400F17264 /* ui */,
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		A3C6C5C72259337400F17264 /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5C82259337D00F17264 /* TabBarItemTests.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		A3C6C5CD2259383200F17264 /* tab-bar */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5B522592C1400F17264 /* MainTabBarManagerTests.swift */,
+				A3C6C5CA2259370900F17264 /* MainTabBarDelegateMock.swift */,
+			);
+			path = "tab-bar";
 			sourceTree = "<group>";
 		};
 		D0C6A3B88EA8A654FBAFCD20 /* Pods */ = {
@@ -493,10 +592,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C6C5B922592CCC00F17264 /* MainTabBarManagerProtocol.swift in Sources */,
 				A39CBC172257E874004C6A95 /* AppDelegate.swift in Sources */,
 				A3C6C5A62258EA3B00F17264 /* BaseRouter.swift in Sources */,
+				A3C6C5C322592DC500F17264 /* BaseView.swift in Sources */,
+				A3C6C5C122592D6D00F17264 /* TabBarItem.swift in Sources */,
+				A3C6C5BD22592CEB00F17264 /* MainTabBarDelegate.swift in Sources */,
 				A3C6C5A92258EB1200F17264 /* AppRouterProtocol.swift in Sources */,
+				A3C6C5C522592E3A00F17264 /* BaseViewModel.swift in Sources */,
 				A3C6C59522580EAA00F17264 /* NetworkManager.swift in Sources */,
+				A3C6C5BB22592CD300F17264 /* MainTabBarManager.swift in Sources */,
 				A3C6C59222580E1400F17264 /* SessionType.swift in Sources */,
 				A3C6C5A42258EA2800F17264 /* AppRouter.swift in Sources */,
 				A3C6C59022580E0E00F17264 /* AppSession.swift in Sources */,
@@ -507,10 +612,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C6C5CB2259370900F17264 /* MainTabBarDelegateMock.swift in Sources */,
 				A3C6C5AF2258EFD200F17264 /* StubRouter.swift in Sources */,
 				A3C6C5AD2258EB9B00F17264 /* AppRouterTests.swift in Sources */,
 				A3C6C5972258110F00F17264 /* AppSessionTests.swift in Sources */,
 				A3C6C5B12258EFFD00F17264 /* BaseRouterTests.swift in Sources */,
+				A3C6C5C92259337D00F17264 /* TabBarItemTests.swift in Sources */,
+				A3C6C5B622592C1400F17264 /* MainTabBarManagerTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
