@@ -19,6 +19,10 @@
 		A3C6C59222580E1400F17264 /* SessionType.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C59122580E1400F17264 /* SessionType.swift */; };
 		A3C6C59522580EAA00F17264 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C59422580EAA00F17264 /* NetworkManager.swift */; };
 		A3C6C5972258110F00F17264 /* AppSessionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5962258110F00F17264 /* AppSessionTests.swift */; };
+		A3C6C5A42258EA2800F17264 /* AppRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5A32258EA2800F17264 /* AppRouter.swift */; };
+		A3C6C5A62258EA3B00F17264 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5A52258EA3B00F17264 /* BaseRouter.swift */; };
+		A3C6C5A92258EB1200F17264 /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5A82258EB1200F17264 /* AppRouterProtocol.swift */; };
+		A3C6C5AD2258EB9B00F17264 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +54,10 @@
 		A3C6C59122580E1400F17264 /* SessionType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionType.swift; sourceTree = "<group>"; };
 		A3C6C59422580EAA00F17264 /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		A3C6C5962258110F00F17264 /* AppSessionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSessionTests.swift; sourceTree = "<group>"; };
+		A3C6C5A32258EA2800F17264 /* AppRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouter.swift; sourceTree = "<group>"; };
+		A3C6C5A52258EA3B00F17264 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
+		A3C6C5A82258EB1200F17264 /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
+		A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
 		D56D701ADA8BDB4069A4BD29 /* Pods-it-events-by.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-by.release.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by.release.xcconfig"; sourceTree = "<group>"; };
 		DE13FBDE89016F733D118737 /* Pods-it-events-byTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-byTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-byTests/Pods-it-events-byTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0D7B12C273BE80DC7F3BBE /* Pods_it_events_by.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_it_events_by.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -121,7 +129,8 @@
 		A39CBC2A2257E875004C6A95 /* it-events-byTests */ = {
 			isa = PBXGroup;
 			children = (
-				A3C6C58B22580D1200F17264 /* core */,
+				A3C6C5AB2258EB8C00F17264 /* router */,
+				A3C6C58B22580D1200F17264 /* session */,
 				A39CBC2D2257E875004C6A95 /* Info.plist */,
 			);
 			path = "it-events-byTests";
@@ -173,27 +182,29 @@
 		A3C6C58922580BFF00F17264 /* app */ = {
 			isa = PBXGroup;
 			children = (
-				A3C6C58A22580C0800F17264 /* core */,
+				A3C6C5AA2258EB2100F17264 /* base */,
+				A3C6C5A72258EB0500F17264 /* router */,
+				A3C6C58A22580C0800F17264 /* session */,
 				A39CBC162257E874004C6A95 /* AppDelegate.swift */,
 			);
 			path = app;
 			sourceTree = "<group>";
 		};
-		A3C6C58A22580C0800F17264 /* core */ = {
+		A3C6C58A22580C0800F17264 /* session */ = {
 			isa = PBXGroup;
 			children = (
 				A3C6C59122580E1400F17264 /* SessionType.swift */,
 				A3C6C58F22580E0E00F17264 /* AppSession.swift */,
 			);
-			path = core;
+			path = session;
 			sourceTree = "<group>";
 		};
-		A3C6C58B22580D1200F17264 /* core */ = {
+		A3C6C58B22580D1200F17264 /* session */ = {
 			isa = PBXGroup;
 			children = (
 				A3C6C5962258110F00F17264 /* AppSessionTests.swift */,
 			);
-			path = core;
+			path = session;
 			sourceTree = "<group>";
 		};
 		A3C6C59322580E9D00F17264 /* network */ = {
@@ -217,6 +228,31 @@
 			children = (
 			);
 			path = ui;
+			sourceTree = "<group>";
+		};
+		A3C6C5A72258EB0500F17264 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5A82258EB1200F17264 /* AppRouterProtocol.swift */,
+				A3C6C5A32258EA2800F17264 /* AppRouter.swift */,
+			);
+			path = router;
+			sourceTree = "<group>";
+		};
+		A3C6C5AA2258EB2100F17264 /* base */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5A52258EA3B00F17264 /* BaseRouter.swift */,
+			);
+			path = base;
+			sourceTree = "<group>";
+		};
+		A3C6C5AB2258EB8C00F17264 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 		D0C6A3B88EA8A654FBAFCD20 /* Pods */ = {
@@ -452,8 +488,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				A39CBC172257E874004C6A95 /* AppDelegate.swift in Sources */,
+				A3C6C5A62258EA3B00F17264 /* BaseRouter.swift in Sources */,
+				A3C6C5A92258EB1200F17264 /* AppRouterProtocol.swift in Sources */,
 				A3C6C59522580EAA00F17264 /* NetworkManager.swift in Sources */,
 				A3C6C59222580E1400F17264 /* SessionType.swift in Sources */,
+				A3C6C5A42258EA2800F17264 /* AppRouter.swift in Sources */,
 				A3C6C59022580E0E00F17264 /* AppSession.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +501,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C6C5AD2258EB9B00F17264 /* AppRouterTests.swift in Sources */,
 				A3C6C5972258110F00F17264 /* AppSessionTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
