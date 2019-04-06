@@ -19,8 +19,9 @@ class SessionTests: XCTestCase {
         
     }
     
-    func testWhenServiceIsRegisteredThenServiceCanBeResolved() {
-        
+    func testNetworkServiceCanBeResolved() {
+        let session: AppSessionType = AppSession()
+        let _: NetworkManagerProtocol = session.resolve()
     }
     
 }
