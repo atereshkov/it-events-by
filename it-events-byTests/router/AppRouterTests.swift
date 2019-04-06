@@ -14,7 +14,8 @@ class AppRouterTests: XCTestCase {
     func testRouterInitialization() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let session: AppSessionType = AppSession()
-        let _: AppRouterProtocol = AppRouter(window: window, session: session)
+        let router: AppRouterProtocol = AppRouter(window: window, session: session)
+        XCTAssertEqual(window, router.window)
     }
     
     func testRouterRootViewControllerIsSet() {

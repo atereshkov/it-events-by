@@ -23,6 +23,8 @@
 		A3C6C5A62258EA3B00F17264 /* BaseRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5A52258EA3B00F17264 /* BaseRouter.swift */; };
 		A3C6C5A92258EB1200F17264 /* AppRouterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5A82258EB1200F17264 /* AppRouterProtocol.swift */; };
 		A3C6C5AD2258EB9B00F17264 /* AppRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */; };
+		A3C6C5AF2258EFD200F17264 /* StubRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5AE2258EFD200F17264 /* StubRouter.swift */; };
+		A3C6C5B12258EFFD00F17264 /* BaseRouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5B02258EFFD00F17264 /* BaseRouterTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +60,8 @@
 		A3C6C5A52258EA3B00F17264 /* BaseRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouter.swift; sourceTree = "<group>"; };
 		A3C6C5A82258EB1200F17264 /* AppRouterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterProtocol.swift; sourceTree = "<group>"; };
 		A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppRouterTests.swift; sourceTree = "<group>"; };
+		A3C6C5AE2258EFD200F17264 /* StubRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StubRouter.swift; sourceTree = "<group>"; };
+		A3C6C5B02258EFFD00F17264 /* BaseRouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRouterTests.swift; sourceTree = "<group>"; };
 		D56D701ADA8BDB4069A4BD29 /* Pods-it-events-by.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-by.release.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by.release.xcconfig"; sourceTree = "<group>"; };
 		DE13FBDE89016F733D118737 /* Pods-it-events-byTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-byTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-byTests/Pods-it-events-byTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0D7B12C273BE80DC7F3BBE /* Pods_it_events_by.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_it_events_by.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -251,6 +255,8 @@
 			isa = PBXGroup;
 			children = (
 				A3C6C5AC2258EB9B00F17264 /* AppRouterTests.swift */,
+				A3C6C5B02258EFFD00F17264 /* BaseRouterTests.swift */,
+				A3C6C5AE2258EFD200F17264 /* StubRouter.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -501,8 +507,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A3C6C5AF2258EFD200F17264 /* StubRouter.swift in Sources */,
 				A3C6C5AD2258EB9B00F17264 /* AppRouterTests.swift in Sources */,
 				A3C6C5972258110F00F17264 /* AppSessionTests.swift in Sources */,
+				A3C6C5B12258EFFD00F17264 /* BaseRouterTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
