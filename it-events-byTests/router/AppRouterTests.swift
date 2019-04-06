@@ -11,10 +11,10 @@ import XCTest
 
 class AppRouterTests: XCTestCase {
     
-    func test() {
+    func testRouterInitialization() {
         let window = UIWindow(frame: UIScreen.main.bounds)
         let session: AppSessionType = AppSession()
-        let router: AppRouterProtocol = AppRouter(window: window, session: session)
+        let _: AppRouterProtocol = AppRouter(window: window, session: session)
     }
     
     func testRouterRootViewControllerIsSet() {
@@ -23,6 +23,13 @@ class AppRouterTests: XCTestCase {
         let router: AppRouterProtocol = AppRouter(window: window, session: session)
         router.start(animated: true)
         XCTAssertNotNil(router.rootViewController)
+    }
+    
+    func testIfRouterNotStartedThenRootViewIsNil() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let session: AppSessionType = AppSession()
+        let router: AppRouterProtocol = AppRouter(window: window, session: session)
+        XCTAssertNil(router.rootViewController)
     }
     
 }

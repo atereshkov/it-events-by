@@ -11,5 +11,8 @@ import UIKit
 protocol AppRouterProtocol {
     func start(animated: Bool)
     
+    var window: UIWindow { get }
+    var session: AppSessionType { get }
+    
     var rootViewController: UIViewController? { get }
 }

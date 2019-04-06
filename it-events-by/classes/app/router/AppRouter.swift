@@ -10,7 +10,7 @@ import UIKit
 
 final class AppRouter: AppRouterProtocol {
     
-    private let window: UIWindow
+    private(set) var window: UIWindow
     private(set) var session: AppSessionType
     
     var rootViewController: UIViewController? {
