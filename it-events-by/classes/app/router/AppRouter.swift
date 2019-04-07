@@ -30,6 +30,9 @@ final class AppRouter: AppRouterProtocol {
         let vc = UIViewController()
         window.rootViewController = vc
         window.makeKeyAndVisible()
+        
+        let router = InitialMainRouter(session: session, view: vc)
+        router.goToMain(window: window)
     }
     
 }
