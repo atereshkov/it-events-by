@@ -7,12 +7,21 @@
 //
 
 protocol MainRouterType: RouterType {
+    var toItem: TabBarItemProtocol? { get }
+    var fromItem: TabBarItemProtocol? { get }
+    
     func changeTab(to: TabBarItemProtocol, from: TabBarItemProtocol)
 }
 
 final class MainRouter: BaseRouter, MainRouterType {
     
+    private(set) var toItem: TabBarItemProtocol?
+    private(set) var fromItem: TabBarItemProtocol?
+    
     func changeTab(to: TabBarItemProtocol, from: TabBarItemProtocol) {
+        self.toItem = to
+        self.fromItem = from
+        
         from.view.willMove(toParent: nil)
         from.view.view.removeFromSuperview()
         from.view.removeFromParent()

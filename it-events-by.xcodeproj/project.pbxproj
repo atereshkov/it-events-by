@@ -54,6 +54,7 @@
 		A3C6C5FC225A221B00F17264 /* MainViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5FB225A221B00F17264 /* MainViewModelTests.swift */; };
 		A3C6C5FE225A2B4A00F17264 /* MainViewMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C5FD225A2B4A00F17264 /* MainViewMock.swift */; };
 		A3C6C602225A3B3700F17264 /* Tabbable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C601225A3B3700F17264 /* Tabbable.swift */; };
+		A3C6C604225A3F3E00F17264 /* MainViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A3C6C603225A3F3E00F17264 /* MainViewTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -120,6 +121,7 @@
 		A3C6C5FB225A221B00F17264 /* MainViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewModelTests.swift; sourceTree = "<group>"; };
 		A3C6C5FD225A2B4A00F17264 /* MainViewMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewMock.swift; sourceTree = "<group>"; };
 		A3C6C601225A3B3700F17264 /* Tabbable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tabbable.swift; sourceTree = "<group>"; };
+		A3C6C603225A3F3E00F17264 /* MainViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewTests.swift; sourceTree = "<group>"; };
 		D56D701ADA8BDB4069A4BD29 /* Pods-it-events-by.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-by.release.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-by/Pods-it-events-by.release.xcconfig"; sourceTree = "<group>"; };
 		DE13FBDE89016F733D118737 /* Pods-it-events-byTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-it-events-byTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-it-events-byTests/Pods-it-events-byTests.debug.xcconfig"; sourceTree = "<group>"; };
 		DF0D7B12C273BE80DC7F3BBE /* Pods_it_events_by.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_it_events_by.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -462,8 +464,8 @@
 			isa = PBXGroup;
 			children = (
 				A3C6C5F3225A168100F17264 /* MainRoutableTests.swift */,
-				A3C6C5F5225A18E500F17264 /* MainRoutableMock.swift */,
 				A3C6C5F7225A1C8400F17264 /* MainRouterTests.swift */,
+				A3C6C5F5225A18E500F17264 /* MainRoutableMock.swift */,
 			);
 			path = router;
 			sourceTree = "<group>";
@@ -479,6 +481,7 @@
 		A3C6C5FA225A218A00F17264 /* view */ = {
 			isa = PBXGroup;
 			children = (
+				A3C6C603225A3F3E00F17264 /* MainViewTests.swift */,
 				A3C6C5FD225A2B4A00F17264 /* MainViewMock.swift */,
 			);
 			path = view;
@@ -759,6 +762,7 @@
 				A3C6C5B12258EFFD00F17264 /* BaseRouterTests.swift in Sources */,
 				A3C6C5D422593AB600F17264 /* DummyView.swift in Sources */,
 				A3C6C5D2225939A800F17264 /* BaseViewModelTests.swift in Sources */,
+				A3C6C604225A3F3E00F17264 /* MainViewTests.swift in Sources */,
 				A3C6C5C92259337D00F17264 /* TabBarItemTests.swift in Sources */,
 				A3C6C5F8225A1C8400F17264 /* MainRouterTests.swift in Sources */,
 				A3C6C5B622592C1400F17264 /* MainTabBarManagerTests.swift in Sources */,

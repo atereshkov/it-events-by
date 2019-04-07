@@ -20,7 +20,8 @@ extension MainRoutable where Self: RouterType {
         view.viewModel = viewModel
         let router = MainRouter(session: session, view: view)
         viewModel.router = router
-
+        
+        // TOOD pass views & controls
         let tabBar: MainTabBarManagerProtocol = MainTabBarManager(views: [], controls: [])
         view.tabBar = tabBar
         

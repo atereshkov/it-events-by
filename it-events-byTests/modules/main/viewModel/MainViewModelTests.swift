@@ -12,11 +12,6 @@ import Foundation
 
 class MainViewModelTests: XCTestCase {
     
-//    override func setUp() {
-//        let session = AppSession()
-//        viewModel = MainViewModel(session: session)
-//    }
-    
     func test() {
         let session = AppSession()
         let viewModel = MainViewModel(session: session)
