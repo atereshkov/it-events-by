@@ -11,14 +11,14 @@ import XCTest
 
 class MainRoutableTests: XCTestCase {
     
-    func test() {
+//    func test() {
 //        let view = UIViewController()
 //        let window = UIWindow(frame: UIScreen.main.bounds)
 //        
 //        let router = MainRoutableMock()
 //        router.goToMain(window: window)
-//        
+//
 //        XCTAssertEqual(view, window.rootViewController)
-    }
+//    }
     
 }

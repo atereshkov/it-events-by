@@ -12,23 +12,7 @@ import Foundation
 
 class MainViewModelTests: XCTestCase {
     
-    func test() {
-        let session = AppSession()
-        let viewModel = MainViewModel(session: session)
-        
-        let containerView = UIView()
-        let view = MainViewMock(containerView: containerView)
-        let router = MainRouter(session: session, view: view)
-        viewModel.router = router
-        
-        let firstTab = TabBarItem(view: UIViewController(), button: UIButton())
-        let secondTab = TabBarItem(view: UIViewController(), button: UIButton())
-        viewModel.changeTabAction(to: secondTab, from: firstTab)
-        
-        XCTAssertTrue(router.view?.children.contains(secondTab.view) ?? false)
-    }
-    
-    func test2() {
+    func testWhenChangeTabFromViewModelThenRouterChangesTabs() {
         let session = AppSession()
         let viewModel = MainViewModel(session: session)
         
@@ -39,6 +23,11 @@ class MainViewModelTests: XCTestCase {
         let firstTab = TabBarItem(view: UIViewController(), button: UIButton())
         let secondTab = TabBarItem(view: UIViewController(), button: UIButton())
         viewModel.changeTabAction(to: secondTab, from: firstTab)
+        
+        XCTAssertEqual(firstTab.view, router.fromItem?.view)
+        XCTAssertEqual(firstTab.button, router.fromItem?.button)
+        XCTAssertEqual(secondTab.view, router.toItem?.view)
+        XCTAssertEqual(secondTab.button, router.toItem?.button)
     }
     
 }
