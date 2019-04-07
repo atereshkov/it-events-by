@@ -7,3 +7,8 @@
 //
 
 import Foundation
+import UIKit
+
+protocol Tabbable {
+    var containerView: UIView! { get set }
+}

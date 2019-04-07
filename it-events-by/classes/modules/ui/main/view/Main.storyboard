@@ -18,21 +18,26 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tHV-qY-lTE">
-                                <rect key="frame" x="186" y="438" width="42" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BlV-oE-w2D">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="BlV-oE-w2D" firstAttribute="top" secondItem="8gH-k4-qnK" secondAttribute="top" id="5yo-tH-6CP"/>
+                            <constraint firstItem="BlV-oE-w2D" firstAttribute="leading" secondItem="8gH-k4-qnK" secondAttribute="leading" id="YiK-AC-jL4"/>
+                            <constraint firstItem="8gH-k4-qnK" firstAttribute="bottom" secondItem="BlV-oE-w2D" secondAttribute="bottom" id="frn-ax-8Co"/>
+                            <constraint firstItem="8gH-k4-qnK" firstAttribute="trailing" secondItem="BlV-oE-w2D" secondAttribute="trailing" id="x8u-9H-GvG"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="8gH-k4-qnK"/>
                     </view>
+                    <connections>
+                        <outlet property="containerView" destination="BlV-oE-w2D" id="KYc-9a-Cuh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="P4B-lm-UtW" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="26" y="155"/>
+            <point key="canvasLocation" x="24.637681159420293" y="154.6875"/>
         </scene>
     </scenes>
 </document>

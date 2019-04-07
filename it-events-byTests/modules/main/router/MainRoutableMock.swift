@@ -7,3 +7,13 @@
 //
 
 import Foundation
+import UIKit
+@testable import it_events_by
+
+class MainRoutableMock: MainRoutable {
+    
+    func goToMain(window: UIWindow) {
+        
+    }
+    
+}

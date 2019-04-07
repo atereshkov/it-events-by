@@ -8,7 +8,7 @@
 
 import UIKit
 
-final class MainView: BaseView<MainViewModel> {
+final class MainView: BaseView<MainViewModel>, Tabbable {
     
     var tabBar: MainTabBarManagerProtocol?
     

@@ -17,7 +17,7 @@ final class MainRouter: BaseRouter, MainRouterType {
         from.view.view.removeFromSuperview()
         from.view.removeFromParent()
         
-        guard let containerView = (self.view as? MainView)?.containerView else { return }
+        guard let containerView = (self.view as? Tabbable)?.containerView else { return }
         self.view?.addChild(to.view)
         to.view.view.frame = containerView.bounds
         to.view.view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
