@@ -33,4 +33,13 @@ class AppRouterTests: XCTestCase {
         XCTAssertNil(router.rootViewController)
     }
     
+    func testThatAppRouterWindowSetToMainScreenAtStartup() {
+        let window = UIWindow(frame: UIScreen.main.bounds)
+        let session: AppSessionType = AppSession()
+        let router: AppRouterProtocol = AppRouter(window: window, session: session)
+        router.start(animated: true)
+        let navVC = router.rootViewController as? UINavigationController
+        XCTAssert(navVC?.children.first is MainView)
+    }
+    
 }

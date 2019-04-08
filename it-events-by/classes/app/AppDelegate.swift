@@ -17,9 +17,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         let window = UIWindow(frame: UIScreen.main.bounds)
         self.window = window
         
-        let vc = UIViewController()
-        window.rootViewController = vc
-        window.makeKeyAndVisible()
+        let session = AppSession()
+        let router = AppRouter(window: window, session: session)
+        router.start(animated: false)
         
         return true
     }
